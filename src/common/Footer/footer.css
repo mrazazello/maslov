@@ -1,0 +1,9 @@
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.credits {
+    font-size: 12px;
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --text: #fff;
+  --bg: #232021;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+
+
+  --block-inner-padding: 64px;
+  --font-heading: "Merriweather", serif;
+  --font-text: "PT Sans", sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--font-text);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#root {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+.layout {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-bg {
+  flex: 1 0 auto;
+  display: flow-root;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px var(--block-inner-padding);
+  gap: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px var(--block-inner-padding);
+  gap: 24px;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--text);
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+p {
+  margin: 0;
+}
+a {
+  color: var(--text);
+}
+
+
