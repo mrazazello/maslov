@@ -1,0 +1,10 @@
+.logo-list .splide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-item {
+    height: 56px;
+    width: 140px;
+    object-fit: cover;
+}

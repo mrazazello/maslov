@@ -1,3 +1,16 @@
+import { BlocksContainer } from "../common/BlocksContainer/BlocksContainer"
+import { PageIntro } from "../common/PageIntro/PageIntro"
+import { StepsList } from "../common/Steps/StepsList"
+
 export const InvestPage = () => {
-  return <h1>Инвестируем</h1>
+  return(
+    <BlocksContainer>
+      <PageIntro 
+        title="Инвестируем в проблемные долги. Создаем результат" 
+        subtitle="Выкупаем право требования долга, дебиторскую задолженность, исполнительные листы и портфели долгов по всей России" 
+        showButton={true} 
+      />
+      <StepsList />
+    </BlocksContainer>
+  )
 }

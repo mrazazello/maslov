@@ -1,5 +1,25 @@
 .btn {
-    background-color: #4D4A4B;
-    color: var(--text);
+    border: 0;
+    border-radius: 5px;
     padding: 8px 20px;
+    font: inherit;
+    cursor: pointer;
+
+    font-size: 18px;
+    list-style: 150%;
+    font-weight: 400;
+
+    
+}
+
+.btn-primary {
+    background-color: #DEC39D;
+    color: #0b0809;
+}
+
+.btn-secondary {
+    background-color: var(--bg);
+    color: var(--text);
+    border: 1px solid #7F7D7D;
+    border-radius: 5px;
 }

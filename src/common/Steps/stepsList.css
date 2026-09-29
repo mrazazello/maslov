@@ -1,0 +1,24 @@
+.steps-list {
+    display: flex;
+    flex-direction: row;
+}
+   
+
+.step-item {
+    width: 300px;
+    border-left: 1px solid var(--border);
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.step-title {
+    margin: 0;
+}
+
+.step-description {
+    text-align: left;
+}

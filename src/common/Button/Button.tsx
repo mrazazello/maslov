@@ -2,15 +2,15 @@ import './button.css';
 
 interface ButtonProps {
     children: React.ReactNode;
+    variant?: 'primary' | 'secondary';
 }
 
 
 export const Button = (props: ButtonProps) => {
-    const { children } = props;
+    const { children, variant = 'primary' } = props;
   return (
-    <button className="btn">
-    {children}
+    <button className={`btn btn-${variant}`}>
+        {children}
     </button>
   )
-
 }
