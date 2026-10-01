@@ -9,8 +9,8 @@ export const Footer = () => {
         <Logo />
         <MainMenu />
         <div className="social-links">
-            <img src="/public/telegram.svg" alt="Telegram" />
-            <img src="/public/vk.svg" alt="VK" />
+            <img src="/telegram.svg" alt="Telegram" />
+            <img src="/vk.svg" alt="VK" />
         </div>
         <div className="credits">
             <Link to="/politika">Политика обработки персональных данных</Link>

@@ -3,14 +3,14 @@ import '@splidejs/react-splide/css/core'
 import './logosList.css'
 
 const logos = [
-    '/public/temp/Placeholder-Logo1@2x.png',
-    '/public/temp/Placeholder-Logo2@2x.png',
-    '/public/temp/Placeholder-Logo3@2x.png',
-    '/public/temp/Placeholder-Logo4@2x.png',
-    '/public/temp/Placeholder-Logo1@2x.png',
-    '/public/temp/Placeholder-Logo2@2x.png',
-    '/public/temp/Placeholder-Logo3@2x.png',
-    '/public/temp/Placeholder-Logo4@2x.png',
+    '/temp/Placeholder-Logo1@2x.png',
+    '/temp/Placeholder-Logo2@2x.png',
+    '/temp/Placeholder-Logo3@2x.png',
+    '/temp/Placeholder-Logo4@2x.png',
+    '/temp/Placeholder-Logo1@2x.png',
+    '/temp/Placeholder-Logo2@2x.png',
+    '/temp/Placeholder-Logo3@2x.png',
+    '/temp/Placeholder-Logo4@2x.png',
 ]
 
 export const LogosList = () => {

@@ -8,7 +8,7 @@ export const Feature = (props: FeatureProps) => {
 
     return (
         <div className="feature-card">
-            <img className="icon" src={`/public/icons/${icon}.svg`} width={48} height={48}  alt={icon} />
+            <img className="icon" src={`/icons/${icon}.svg`} width={48} height={48}  alt={icon} />
             <h3 className="section-title">{title}</h3>
       </div>
     )
