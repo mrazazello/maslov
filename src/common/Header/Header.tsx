@@ -9,7 +9,7 @@ export const Header = () => {
             <Logo />
             <MainMenu />
             <div className="actions">
-                <h3 className="tel">+7 (921) 66-66-666</h3>
+                <div className="tel">+7 (921) 66-66-666</div>
                 <Button variant="secondary">Перезвоните мне</Button>
             </div>
         </header>

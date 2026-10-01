@@ -1,5 +1,3 @@
-import "./feature.css"
-
 interface FeatureProps {
     icon: string;
     title: string;

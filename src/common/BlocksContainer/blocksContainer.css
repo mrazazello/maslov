@@ -4,3 +4,15 @@
     flex-direction: column;
     gap: 32px;
 }
+
+.blocks-container.align-center {
+    align-items: center;
+}
+
+.blocks-container.align-start {
+    align-items: flex-start;
+}
+
+.blocks-container.align-end {
+    align-items: flex-end;
+}

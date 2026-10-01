@@ -1,3 +1,13 @@
+.logo-list {
+    align-self: stretch;
+    width: 100%;
+    min-width: 0;
+}
+
+.logo-list .splide__track {
+    overflow: hidden;
+}
+
 .logo-list .splide__slide {
     display: flex;
     justify-content: center;

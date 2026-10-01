@@ -5,12 +5,13 @@ interface PageIntroProps {
     title: string;
     subtitle?: string;
     showButton?: boolean;
+    isNarrow?: boolean;
 }
 
 export const PageIntro = (props: PageIntroProps) => {
-    const { title, subtitle, showButton } = props;
+    const { title, subtitle, showButton, isNarrow } = props;
     return (
-        <div className="page-intro">
+        <div className={`page-intro ${isNarrow ? "page-intro--narrow" : ""}`}>
             <h1>{title}</h1>
             {subtitle && <p className="subtitle">{subtitle}</p>}
             {showButton && (

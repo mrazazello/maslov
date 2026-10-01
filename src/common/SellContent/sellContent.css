@@ -1,0 +1,32 @@
+.sell-content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.sell-page-left {
+    flex: 1;
+    min-width: 0;
+
+    text-align: left;
+}
+
+.sell-page-right {
+    flex: 3;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.sell-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+
+    text-align: left;
+}

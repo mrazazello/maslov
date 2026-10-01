@@ -14,7 +14,7 @@ const logos = [
 ]
 
 export const LogosList = () => {
-    const canSlide = logos.length > 4
+    const canSlide = logos.length > 6
 
     return (
         <>
@@ -24,7 +24,7 @@ export const LogosList = () => {
             aria-label="Нам доверяют"
             options={{
                 type: canSlide ? 'loop' : 'slide',
-                perPage: 4,
+                perPage: 6,
                 perMove: 1,
                 gap: 24,
                 arrows: false,
@@ -35,8 +35,8 @@ export const LogosList = () => {
                 drag: canSlide,
             }}
         >
-            {logos.map((src) => (
-                <SplideSlide key={src}>
+            {logos.map((src, index) => (
+                <SplideSlide key={`${src}-${index}`}>
                     <img src={src} alt="" className="logo-item" />
                 </SplideSlide>
             ))}

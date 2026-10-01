@@ -8,8 +8,7 @@
     font-size: 18px;
     list-style: 150%;
     font-weight: 400;
-
-    
+    white-space: nowrap;
 }
 
 .btn-primary {

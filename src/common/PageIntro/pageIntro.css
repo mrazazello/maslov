@@ -4,11 +4,19 @@
     gap: 16px;
 
     align-items: center;
-
 }
 
 .subtitle {
     font-size: 19px;
     font-family: var(--font-text);
     line-height: 150%;
+}
+
+.page-intro--narrow {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-intro--narrow :is(.subtitle, h1) {
+    text-align: left;
 }
