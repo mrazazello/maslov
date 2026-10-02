@@ -33,6 +33,12 @@
     gap: 16px;
 }
 
+@media (max-width: 1279px) {
+  .cases-slider {
+    max-width: var(--case-card-max);
+  }
+}
+
 .cases-slider .splide__arrow {
     position: static;
     transform: none;

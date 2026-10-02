@@ -101,4 +101,13 @@ a {
   color: var(--text);
 }
 
+@media (max-width: 1279px) {
+  html,
+  body,
+  #root {
+    height: auto;
+    overflow: visible;
+  }
+}
+
 

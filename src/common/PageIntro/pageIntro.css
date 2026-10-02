@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.page-intro h1 {
+    text-align: center;
+}
+
 .subtitle {
     font-size: 19px;
     font-family: var(--font-text);
@@ -24,4 +28,10 @@
 .page-intro--narrow :is(.subtitle, h1) {
     margin: 0;
     text-align: left;
+}
+
+@media (max-width: 1279px) {
+  .page-intro--narrow {
+    flex-direction: column;
+  }
 }

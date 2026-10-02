@@ -30,3 +30,11 @@
 .feature-card .icon {
 color: #DCC098;
 }
+
+@media (max-width: 1279px) {
+  .features-list {
+    width: 100%;
+    align-self: stretch;
+    grid-template-columns: 1fr;
+  }
+}

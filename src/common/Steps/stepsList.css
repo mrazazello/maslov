@@ -35,3 +35,9 @@
 .step-description {
     text-align: left;
 }
+
+@media (max-width: 1279px) {
+  .steps-container {
+    flex-direction: column;
+  }
+}

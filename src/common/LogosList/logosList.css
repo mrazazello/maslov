@@ -1,14 +1,24 @@
-.logo-list {
+.logos-list {
     align-self: stretch;
     width: 100%;
     min-width: 0;
 }
 
-.logo-list .splide__track {
+.logos-list h4 {
+    text-align: center;
+}
+
+.logo-container {
+    width: 100%;
+    min-width: 0;
+}
+
+
+.logo-container .splide__track {
     overflow: hidden;
 }
 
-.logo-list .splide__slide {
+.logo-container .splide__slide {
     display: flex;
     justify-content: center;
 }

@@ -17,10 +17,10 @@ export const LogosList = () => {
     const canSlide = logos.length > 6
 
     return (
-        <>
+        <div className="logos-list">
         <h4>Нам доверяют</h4>
         <Splide
-            className="logo-list"
+            className="logo-container"
             aria-label="Нам доверяют"
             options={{
                 type: canSlide ? 'loop' : 'slide',
@@ -33,6 +33,11 @@ export const LogosList = () => {
                 interval: 2500,
                 speed: 700,
                 drag: canSlide,
+                breakpoints: {
+                    1279: {
+                        perPage: 1,
+                    },
+                },
             }}
         >
             {logos.map((src, index) => (
@@ -41,6 +46,6 @@ export const LogosList = () => {
                 </SplideSlide>
             ))}
         </Splide>
-        </>
+        </div>
     )
 }

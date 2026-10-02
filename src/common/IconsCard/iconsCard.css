@@ -48,3 +48,14 @@
     object-position: center;
     margin: 0;
 }
+
+@media (max-width: 1279px) {
+  .icons-card-container {
+    flex-direction: column;
+  }
+
+  .icons-card .row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}

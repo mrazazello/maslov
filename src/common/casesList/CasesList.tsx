@@ -20,6 +20,12 @@ export const CasesList = () => {
                     gap: '32px',
                     arrows: true,
                     pagination: false,
+                    breakpoints: {
+                        1279: {
+                            perPage: 1,
+                            perMove: 1,
+                        },
+                    },
                 }}
             >
                 {cases.map((id) => (
