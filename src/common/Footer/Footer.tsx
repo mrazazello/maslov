@@ -1,20 +1,23 @@
 import { Link } from "react-router-dom";
-import { Logo } from "../Logo/Logo"
-import { MainMenu } from "../MainMenu/MainMenu"
 import './footer.css';
 
 export const Footer = () => {
     return (
     <footer>
-        <Logo />
-        <MainMenu />
-        <div className="social-links">
-            <img src="/telegram.svg" alt="Telegram" />
-            <img src="/vk.svg" alt="VK" />
+        <div className="footer-left">
+            <div><span className="footer-param">Часы работы:</span> 9:00 - 20:00</div>
+            <div><span className="footer-param">Телефон:</span> +7 (999) 999-99-99</div>
         </div>
-        <div className="credits">
-            <Link to="/politika">Политика обработки персональных данных</Link>
-            <p>© 2026 Дебт Капитал. Все права защищены.</p>
+
+        <div className="footer-right">
+            <div className="social-links">
+                <img src="/telegram.svg" alt="Telegram" width={24} height={24} />
+                <img src="/vk.svg" alt="VK" width={24} height={24} />
+            </div>
+            <div className="credits">© 2026 Дебт Капитал. Все права защищены.</div>
+            <div className="credits">
+                <Link to="/politika">Политика обработки персональных данных</Link>
+            </div>
         </div>
     </footer>
     )

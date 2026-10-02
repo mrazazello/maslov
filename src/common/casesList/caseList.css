@@ -9,10 +9,15 @@
 }
 
 .cases-slider {
+    --case-card-max: 400px;
+    --case-gap: 32px;
+
     display: flex;
     flex-direction: column;
     gap: 32px;
     width: 100%;
+    max-width: calc(var(--case-card-max) * 3 + var(--case-gap) * 2);
+    margin-inline: auto;
     min-width: 0;
 }
 
@@ -78,6 +83,7 @@
     aspect-ratio: 1;
     width: 100%;
     min-width: 0;
+    max-width: var(--case-card-max, 400px);
 
     border-radius: 10px;
     padding: 32px;
