@@ -26,12 +26,16 @@ footer {
   }
 
 
-
 .social-links {
     display: flex;
     flex-direction: row;
     gap: 8px;
 }
+
+.social-links img {
+    display: block;
+}
+
 
 .credits {
     font-size: 14px;

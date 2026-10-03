@@ -11,8 +11,8 @@ export const Footer = () => {
 
         <div className="footer-right">
             <div className="social-links">
-                <img src="/telegram.svg" alt="Telegram" width={24} height={24} />
-                <img src="/vk.svg" alt="VK" width={24} height={24} />
+                <a href="#"><img src="/telegram.svg" alt="Telegram" width={24} height={24} /></a>
+                <a href="#"><img src="/vk.svg" alt="VK" width={24} height={24} /></a>
             </div>
             <div className="credits">© 2026 Дебт Капитал. Все права защищены.</div>
             <div className="credits">

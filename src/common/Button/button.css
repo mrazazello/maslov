@@ -22,3 +22,9 @@
     border: 1px solid #7F7D7D;
     border-radius: 5px;
 }
+
+.btn-transparent {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}

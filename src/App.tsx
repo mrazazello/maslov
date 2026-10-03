@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { Toaster } from 'sonner'
 import { Layout } from './common/Layout/Layout'
 import { PageBackground } from './common/PageBackground/PageBackground'
 import { Footer } from './common/Footer/Footer'
@@ -24,6 +25,7 @@ function App() {
         </Routes>
       </Layout>
       <Footer />
+      <Toaster position="top-center" />
     </>
   )
 }
