@@ -19,10 +19,13 @@
 
 
   @media (max-width: 1279px) {
- 
     .main-menu {
+      display: none;
       flex-direction: column;
       gap: 16px;
     }
 
+    .main-menu--open {
+      display: flex;
+    }
 }

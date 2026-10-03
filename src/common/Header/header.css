@@ -16,6 +16,22 @@ header {
     justify-content: flex-end;
 }
 
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
 .actions .tel {
 
     display: flex;
@@ -33,6 +49,15 @@ header {
 @media (max-width: 1279px) {
   header {
     flex-direction: column;
+  }
+
+  .header-top {
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .actions {
