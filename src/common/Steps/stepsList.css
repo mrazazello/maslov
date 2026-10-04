@@ -17,19 +17,27 @@
    
 
 .step-item {
-    /* width: 300px; */
     flex: 1;
     border-left: 1px solid var(--border);
     padding: 0 16px;
 
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 16px;
     align-items: flex-start;
 }
 
+@media (max-width: 1279px) {
+    .step-item {
+        border-left: none;
+        border-bottom: 1px solid var(--border);
+        padding: 16px 0;
+    }
+  }
+
 .step-title {
     margin: 0;
+
 }
 
 .step-description {

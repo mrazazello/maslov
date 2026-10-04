@@ -5,7 +5,7 @@
 
     align-items: center;
 
-    margin-top: 32px;
+    padding: 20px 64px;
     width: 100%;
 }
 
@@ -17,6 +17,7 @@
     font-size: 19px;
     font-family: var(--font-text);
     line-height: 150%;
+    text-align: center;
 }
 
 .page-intro--narrow {
@@ -31,7 +32,19 @@
 }
 
 @media (max-width: 1279px) {
+  .page-intro {
+    background-image: var(--page-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .page-intro--narrow {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .page-intro--narrow :is(.subtitle, h1) {
+    text-align: center;
   }
 }

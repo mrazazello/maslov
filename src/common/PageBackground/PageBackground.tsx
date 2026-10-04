@@ -9,9 +9,9 @@ export const PageBackground = ({ image, children }: PageBackgroundProps) => {
       className="page-bg"
       style={
         image
-          ? {
-              backgroundImage: `linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url(/${image}.jpg)`,
-            }
+          ? ({
+              "--page-image": `linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)), url(/${image}.jpg)`,
+            } as React.CSSProperties)
           : undefined
       }
     >
