@@ -44,14 +44,21 @@ footer {
 @media (max-width: 1279px) {
   footer {
     flex-direction: column;
+    gap: 16px;
   }
 
   .footer-left {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding-top: 16px;
   }
 
   .footer-right {
     flex-direction: column;
+    gap: 16px;
   }
 
   .social-links {
