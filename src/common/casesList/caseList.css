@@ -93,7 +93,7 @@
 
     border-radius: 10px;
     padding: 32px;
-    background-color: rgba(43, 38, 32, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .case-card-lid {
@@ -106,4 +106,11 @@
 
 .case-card-client {
     color: var(--accent);
+}
+
+.case-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
 }

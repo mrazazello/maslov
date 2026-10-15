@@ -21,9 +21,10 @@ export function useModal() {
 interface ModalProps {
     component: ComponentType
     children: ReactNode
+    title?: string
 }
 
-export function Modal({ component: Content, children }: ModalProps) {
+export function Modal({ component: Content, children, title = "Обратная связь" }: ModalProps) {
     const [isOpen, setIsOpen] = useState(false)
     const portalRoot = document.getElementById("portal")
     const close = () => setIsOpen(false)
@@ -51,12 +52,14 @@ export function Modal({ component: Content, children }: ModalProps) {
                         onClick={(event) => event.stopPropagation()}
                     >
                         <div className="modal-header">
-                            <h2>Обратная связь</h2>
+                            <h2>{title}</h2>
                             <Button variant="transparent" onClick={close}>
                                 <img src="/icons/close.svg" alt="Закрыть" />
                             </Button>
                         </div>
-                        <Content />
+                        <div className="modal-body">
+                            <Content />
+                        </div>
                     </div>
                 </div>,
                 portalRoot,

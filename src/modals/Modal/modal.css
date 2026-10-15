@@ -10,11 +10,21 @@
 
 .modal-window {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     width: 576px;
-    min-width: 320px;
+    max-width: calc(100vw - 32px);
+    min-width: 0;
+    max-height: min(640px, calc(100svh - 64px));
     padding: 32px;
     border-radius: 10px;
     background: #726F6A;
+    overflow: hidden;
+}
+
+.modal-body {
+    min-height: 0;
+    overflow: auto;
 }
 
 .modal-header {
